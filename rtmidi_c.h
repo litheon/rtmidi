@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /************************************************************************/
 /*! \defgroup C-interface
     @{
@@ -16,6 +17,8 @@
   \file rtmidi_c.h
  */
 
+=======
+>>>>>>> e3a5ffd (Extended rtmidi_c with message size)
 #include <stdbool.h>
 #include <stddef.h>
 #ifndef RTMIDI_C_H
