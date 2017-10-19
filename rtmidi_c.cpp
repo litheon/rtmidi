@@ -50,6 +50,12 @@ class CallbackProxyUserData
 #endif
 extern "C" const unsigned int rtmidi_num_compiled_apis;
 
+/* misc */
+int rtmidi_sizeof_rtmidi_api ()
+{
+	return sizeof (RtMidiApi);
+}
+
 /* RtMidi API */
 const char* rtmidi_get_version()
 {
