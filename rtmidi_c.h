@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /************************************************************************/
 /*! \defgroup C-interface
     @{
@@ -17,8 +16,6 @@
   \file rtmidi_c.h
  */
 
-=======
->>>>>>> e3a5ffd (Extended rtmidi_c with message size)
 #include <stdbool.h>
 #include <stddef.h>
 #ifndef RTMIDI_C_H
@@ -175,7 +172,7 @@ RTMIDIAPI unsigned int rtmidi_get_port_count (RtMidiPtr device);
  * 
  * See RtMidi::getPortName().
  */
-RTMIDIAPI int rtmidi_get_port_name (RtMidiPtr device, unsigned int portNumber, char * bufOut, int * bufLen);
+RTMIDIAPI const char* rtmidi_get_port_name (RtMidiPtr device, unsigned int portNumber);
 
 /* RtMidiIn API */
 
