@@ -159,7 +159,7 @@ const char * rtmidi_get_port_name (RtMidiPtr device, unsigned int portNumber)
         return 0;
     }
 
-    return strdup (name.c_str ());
+    return _strdup (name.c_str ());
 
     //return snprintf(bufOut, static_cast<size_t>(*bufLen), "%s", name.c_str());
 }
