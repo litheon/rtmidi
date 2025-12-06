@@ -158,8 +158,11 @@ const char * rtmidi_get_port_name (RtMidiPtr device, unsigned int portNumber)
         device->msg = err.what ();
         return 0;
     }
-
+    #if __APPLE__
+    return strdup (name.c_str ());
+    #else
     return _strdup (name.c_str ());
+    #endif
 
     //return snprintf(bufOut, static_cast<size_t>(*bufLen), "%s", name.c_str());
 }
